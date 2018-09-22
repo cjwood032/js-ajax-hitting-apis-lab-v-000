@@ -12,4 +12,5 @@ function getRepositories() {
 
 function getCommits(cm) {
   const repoName = cm.dataset.repository;
+  const ur1= rootURL +'/repos/' + cm.dataset.username + '/' + repoName + '/commits';
 }
