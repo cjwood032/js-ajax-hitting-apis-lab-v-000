@@ -13,4 +13,8 @@ function getRepositories() {
 function getCommits(cm) {
   const repoName = cm.dataset.repository;
   const ur1= rootURL +'/repos/' + cm.dataset.username + '/' + repoName + '/commits';
+  const xhr = new XMLHttpRequest();
+  xhr.addEventListener('load', displayCommits);
+  xhr.open('GET', uri);
+  xhr.send();
 }
