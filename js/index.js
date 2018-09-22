@@ -41,5 +41,5 @@ function getCommits(cm) {
 }
 
 function displayCommits(){
-  
+
 }
