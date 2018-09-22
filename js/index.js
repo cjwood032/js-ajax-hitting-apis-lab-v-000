@@ -31,9 +31,9 @@ function displayRepositories() {
   document.getElementById('repositories').innerHTML = repoList;
 }
 
-function getCommits(cm) {
-  const repoName = cm.dataset.repository;
-  const ur1= rootURL +'/repos/' + cm.dataset.username + '/' + repoName + '/commits';
+function getCommits(el) {
+  const repoName = eld.dataset.repository;
+  const ur1= rootURL +'/repos/' + el.dataset.username + '/' + repoName + '/commits';
   const xhr = new XMLHttpRequest();
   xhr.addEventListener('load', displayCommits);
   xhr.open('GET', uri);
