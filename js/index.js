@@ -18,3 +18,7 @@ function getCommits(cm) {
   xhr.open('GET', uri);
   xhr.send();
 }
+
+function displayCommits(){
+  
+}
